@@ -265,7 +265,7 @@ for pde in pdelist:
     initial_conditions = "0"
     for line in initial_lines:
         if line.find(pde.name+"(") == 0:
-            initial_conditions = line.split("=")[1].strip()
+            initial_conditions = line.split("=",1)[1].strip()
             break
     
     
